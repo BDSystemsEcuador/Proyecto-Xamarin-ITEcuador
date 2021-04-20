@@ -1,0 +1,10 @@
+drawable/grid_clearicon.xml;drawable/grid_clearicon.xml
+drawable/grid_dateicon.xml;drawable/grid_dateicon.xml
+drawable/grid_dropdown.xml;drawable/grid_dropdown.xml
+drawable/grid_dropup.xml;drawable/grid_dropup.xml
+drawable/grid_erroricon.xml;drawable/grid_erroricon.xml
+drawable/grid_minusicon.xml;drawable/grid_minusicon.xml
+drawable/grid_plusicon.xml;drawable/grid_plusicon.xml
+drawable/grid_searchicon.xml;drawable/grid_searchicon.xml
+drawable/grid_timeicon.xml;drawable/grid_timeicon.xml
+values/Strings.xml;values/strings.xml

@@ -1,0 +1,64 @@
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.deps.json
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.dll
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ref\ProyectoITXamarin.dll
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.pdb
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.AssemblyInfo.cs
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.dll
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ref\ProyectoITXamarin.dll
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.pdb
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\DevExpress.XamarinForms.Core.dll
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\DevExpress.XamarinForms.Editors.dll
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\DevExpress.XamarinForms.Grid.dll
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.csproj.CopyComplete
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.deps.json
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.dll
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ref\ProyectoITXamarin.dll
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.pdb
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\DevExpress.XamarinForms.Core.dll
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\DevExpress.XamarinForms.Editors.dll
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\DevExpress.XamarinForms.Grid.dll
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\DevExpress.XamarinForms.Navigation.dll
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.AssemblyInfo.cs
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.csproj.CopyComplete
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.dll
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ref\ProyectoITXamarin.dll
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.pdb
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\DevExpress.XamarinForms.Charts.dll
+C:\Users\rober\source\repos\Tablas ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.csprojAssemblyReference.cache
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.deps.json
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.dll
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ref\ProyectoITXamarin.dll
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.pdb
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.AssemblyInfoInputs.cache
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.AssemblyInfo.cs
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.dll
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ref\ProyectoITXamarin.dll
+C:\Users\Daniel\Documents\Proyectos 2021\curso de C#\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.pdb
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.deps.json
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.dll
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ref\ProyectoITXamarin.dll
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\ProyectoITXamarin.pdb
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.AssemblyInfoInputs.cache
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.AssemblyInfo.cs
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.dll
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ref\ProyectoITXamarin.dll
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.pdb
+C:\Users\Daniel\source\repos\XamarinIT-version2\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.csprojAssemblyReference.cache
