@@ -13,7 +13,6 @@ using DevExpress.XamarinForms.Charts;
 using Xamarin.Forms.PlatformConfiguration;
 using System.Windows.Input;
 using DemoCenter.Forms.Models;
-using DevExpress.XamarinForms.Core.Themes;
 using System.Threading.Tasks;
 using DemoCenter.Forms.ViewModels.Services;
 namespace DemoCenter.Forms.ViewModels.Services

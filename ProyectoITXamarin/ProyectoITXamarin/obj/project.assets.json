@@ -732,6 +732,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "DevExpress.XamarinForms.Charts >= 20.2.6",
+      "DevExpress.XamarinForms.Editors >= 20.2.6",
       "DevExpress.XamarinForms.Grid >= 20.2.6",
       "DevExpress.XamarinForms.Navigation >= 20.2.6",
       "NETStandard.Library >= 2.0.3",
@@ -741,23 +742,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Daniel\\.nuget\\packages\\": {},
+    "C:\\Users\\rober\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel\\source\\repos\\XamarinIT-version2\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj",
+      "projectUniqueName": "C:\\Users\\rober\\source\\repos\\xamarin-con-selection\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj",
       "projectName": "ProyectoITXamarin",
-      "projectPath": "C:\\Users\\Daniel\\source\\repos\\XamarinIT-version2\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj",
-      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel\\source\\repos\\XamarinIT-version2\\ProyectoITXamarin\\ProyectoITXamarin\\obj\\",
+      "projectPath": "C:\\Users\\rober\\source\\repos\\xamarin-con-selection\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj",
+      "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rober\\source\\repos\\xamarin-con-selection\\ProyectoITXamarin\\ProyectoITXamarin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -767,7 +768,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.devexpress.com/PkYDzagk53XrCmBJsqDur6WctQttQGdVSHIntk7SljFSqLqeR9/api": {}
+        "https://nuget.devexpress.com/ICvP7dL9cLqfDPiRWEryrQ4rzWQxdxdakhHkeLHT9ylDArAlAq/api": {}
       },
       "frameworks": {
         "netstandard2.0": {
@@ -786,6 +787,10 @@
         "targetAlias": "netstandard2.0",
         "dependencies": {
           "DevExpress.XamarinForms.Charts": {
+            "target": "Package",
+            "version": "[20.2.6, )"
+          },
+          "DevExpress.XamarinForms.Editors": {
             "target": "Package",
             "version": "[20.2.6, )"
           },

@@ -1120,6 +1120,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "DevExpress.XamarinForms.Charts": "20.2.6",
+          "DevExpress.XamarinForms.Editors": "20.2.6",
           "DevExpress.XamarinForms.Grid": "20.2.6",
           "DevExpress.XamarinForms.Navigation": "20.2.6",
           "Newtonsoft.Json": "13.0.1",
@@ -2460,6 +2461,7 @@
     "MonoAndroid,Version=v11.0": [
       "DevExpress.XamarinForms.Charts >= 20.2.6",
       "DevExpress.XamarinForms.Editors >= 20.2.6",
+      "DevExpress.XamarinForms.Grid >= 20.2.6",
       "DevExpress.XamarinForms.Navigation >= 20.2.6",
       "ProyectoITXamarin >= 1.0.0",
       "Xamarin.Essentials >= 1.6.1",
@@ -2468,24 +2470,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Daniel\\.nuget\\packages\\": {},
+    "C:\\Users\\rober\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel\\source\\repos\\XamarinIT-version2\\ProyectoITXamarin\\ProyectoITXamarin.Android\\ProyectoITXamarin.Android.csproj",
+      "projectUniqueName": "C:\\Users\\rober\\source\\repos\\xamarin-con-selection\\ProyectoITXamarin\\ProyectoITXamarin.Android\\ProyectoITXamarin.Android.csproj",
       "projectName": "ProyectoITXamarin.Android",
-      "projectPath": "C:\\Users\\Daniel\\source\\repos\\XamarinIT-version2\\ProyectoITXamarin\\ProyectoITXamarin.Android\\ProyectoITXamarin.Android.csproj",
-      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel\\source\\repos\\XamarinIT-version2\\ProyectoITXamarin\\ProyectoITXamarin.Android\\obj\\",
+      "projectPath": "C:\\Users\\rober\\source\\repos\\xamarin-con-selection\\ProyectoITXamarin\\ProyectoITXamarin.Android\\ProyectoITXamarin.Android.csproj",
+      "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rober\\source\\repos\\xamarin-con-selection\\ProyectoITXamarin\\ProyectoITXamarin.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2495,13 +2497,13 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.devexpress.com/PkYDzagk53XrCmBJsqDur6WctQttQGdVSHIntk7SljFSqLqeR9/api": {}
+        "https://nuget.devexpress.com/ICvP7dL9cLqfDPiRWEryrQ4rzWQxdxdakhHkeLHT9ylDArAlAq/api": {}
       },
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Daniel\\source\\repos\\XamarinIT-version2\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj": {
-              "projectPath": "C:\\Users\\Daniel\\source\\repos\\XamarinIT-version2\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj"
+            "C:\\Users\\rober\\source\\repos\\xamarin-con-selection\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj": {
+              "projectPath": "C:\\Users\\rober\\source\\repos\\xamarin-con-selection\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj"
             }
           }
         }
@@ -2515,6 +2517,10 @@
             "version": "[20.2.6, )"
           },
           "DevExpress.XamarinForms.Editors": {
+            "target": "Package",
+            "version": "[20.2.6, )"
+          },
+          "DevExpress.XamarinForms.Grid": {
             "target": "Package",
             "version": "[20.2.6, )"
           },

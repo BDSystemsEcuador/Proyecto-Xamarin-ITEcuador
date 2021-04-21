@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="DevExpress.XamarinForms.Charts" Version="20.2.6" />
+    <PackageReference Include="DevExpress.XamarinForms.Editors" Version="20.2.6" />
     <PackageReference Include="DevExpress.XamarinForms.Grid" Version="20.2.6" />
     <PackageReference Include="DevExpress.XamarinForms.Navigation" Version="20.2.6" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
