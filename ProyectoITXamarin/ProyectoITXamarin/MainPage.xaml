@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ProyectoITXamarin"
-             xmlns:vm="clr-namespace:DemoCenter.Forms.ViewModels"
              xmlns:views="clr-namespace:DemoCenter.Forms.Views"
              xmlns:locals="clr-namespace:DemoCenter.Forms"
              xmlns:demo="clr-namespace:DemoCenter.Forms.Demo"
@@ -18,7 +17,7 @@
         <Color x:Key="blue600">#FFFFFF</Color>
         <views:SelectionConverter x:Key="selectionConverter"/>
         <!--este es el selector del chart-->
-        <views:ChartTitleConverter x:Key="chartTitleConverter"/>
+        <!--<views:ChartTitleConverter x:Key="chartTitleConverter"/>-->
         <!--titulo del grafico de barras-->
         <!--<locals: x:Key="boolToStackOrientationConverter"/>-->
         <!--adapta a la orientaciòn del dispositivo-->
@@ -185,7 +184,7 @@
                                      SelectionMode="Single">
 
                             <dxc:PieChartView.ChartStyle>
-                                <dxc:PieChartStyle></dxc:PieChartStyle>
+                                <dxc:PieChartStyle Palette="{Binding Palette}"></dxc:PieChartStyle>
                             </dxc:PieChartView.ChartStyle>
                             <dxc:PieChartView.Legend>
                                 <dxc:Legend Orientation="LeftToRight"
@@ -301,6 +300,42 @@
                                         <dxc:AreaSeriesStyle Fill="{Binding Palette[2]}">
                                             <dxc:AreaSeriesStyle.MarkerStyle>
                                                 <dxc:MarkerStyle Fill="{Binding Palette[2]}" />
+                                            </dxc:AreaSeriesStyle.MarkerStyle>
+                                        </dxc:AreaSeriesStyle>
+                                    </dxc:StackedAreaSeries.Style>
+                                </dxc:StackedAreaSeries>
+                                <dxc:StackedAreaSeries Visible="{Binding SelectedItem, Source={x:Reference pieChart}, Converter={StaticResource selectionConverter}, ConverterParameter=N. America}" 
+                                                  MarkersVisible="true">
+                                    <dxc:StackedAreaSeries.Data>
+                                        <dxc:SeriesDataAdapter DataSource="{Binding SeriesDataByYears[3]}" ArgumentDataMember="Argument">
+                                            <dxc:ValueDataMember Type="Value" Member="Value" />
+                                        </dxc:SeriesDataAdapter>
+                                    </dxc:StackedAreaSeries.Data>
+                                    <dxc:StackedAreaSeries.HintOptions>
+                                        <dxc:SeriesCrosshairOptions PointTextPattern="{}${V$#.##}M" />
+                                    </dxc:StackedAreaSeries.HintOptions>
+                                    <dxc:StackedAreaSeries.Style>
+                                        <dxc:AreaSeriesStyle Fill="{Binding Palette[3]}">
+                                            <dxc:AreaSeriesStyle.MarkerStyle>
+                                                <dxc:MarkerStyle Fill="{Binding Palette[3]}" />
+                                            </dxc:AreaSeriesStyle.MarkerStyle>
+                                        </dxc:AreaSeriesStyle>
+                                    </dxc:StackedAreaSeries.Style>
+                                </dxc:StackedAreaSeries>
+                                <dxc:StackedAreaSeries Visible="{Binding SelectedItem, Source={x:Reference pieChart}, Converter={StaticResource selectionConverter}, ConverterParameter=S. America}" 
+                                                  MarkersVisible="true">
+                                    <dxc:StackedAreaSeries.Data>
+                                        <dxc:SeriesDataAdapter DataSource="{Binding SeriesDataByYears[4]}" ArgumentDataMember="Argument">
+                                            <dxc:ValueDataMember Type="Value" Member="Value" />
+                                        </dxc:SeriesDataAdapter>
+                                    </dxc:StackedAreaSeries.Data>
+                                    <dxc:StackedAreaSeries.HintOptions>
+                                        <dxc:SeriesCrosshairOptions PointTextPattern="{}${V$#.##}M" />
+                                    </dxc:StackedAreaSeries.HintOptions>
+                                    <dxc:StackedAreaSeries.Style>
+                                        <dxc:AreaSeriesStyle Fill="{Binding Palette[4]}">
+                                            <dxc:AreaSeriesStyle.MarkerStyle>
+                                                <dxc:MarkerStyle Fill="{Binding Palette[4]}" />
                                             </dxc:AreaSeriesStyle.MarkerStyle>
                                         </dxc:AreaSeriesStyle>
                                     </dxc:StackedAreaSeries.Style>
