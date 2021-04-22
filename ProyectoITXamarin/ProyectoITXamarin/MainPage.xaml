@@ -4,11 +4,13 @@
              xmlns:local="clr-namespace:ProyectoITXamarin"
              xmlns:views="clr-namespace:DemoCenter.Forms.Views"
              xmlns:locals="clr-namespace:DemoCenter.Forms"
+             xmlns:dxdf="http://schemas.devexpress.com/xamarin/2014/forms/dataform"
              xmlns:demo="clr-namespace:DemoCenter.Forms.Demo"
              xmlns:dxn="http://schemas.devexpress.com/xamarin/2014/forms/navigation"
              xmlns:dxg="http://schemas.devexpress.com/xamarin/2014/forms/datagrid"
-             xmlns:dxc="http://schemas.devexpress.com/xamarin/2014/forms/charts"
+             xmlns:dxc="http://schemas.devexpress.com/xamarin/2014/forms/charts" xmlns:dxc1="http://schemas.devexpress.com/xamarin/2014/forms/editors"
              x:Class="ProyectoITXamarin.MainPage">
+
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
@@ -61,8 +63,24 @@
                          SelectedHeaderTextColor="{StaticResource blue600}"
                          SelectedHeaderIconColor="{StaticResource blue600}">
             <dxn:TabViewItem.Content>
-                <StackLayout>
-                    <dxg:DataGridView x:Name="grid1" ItemsSource="{Binding Facturas}" ShowAutoFilterRow="True">
+                <dxg:DataGridView x:Name="grid1">
+                        <dxg:DataGridView.AdvancedColumnLayout>
+                            <dxg:AdvancedColumnLayout>
+                                <dxg:AdvancedColumnLayout.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="6*"/>
+                                    <ColumnDefinition Width="7*"/>
+                                    <ColumnDefinition Width="6*"/>
+                                    <ColumnDefinition Width="9*"/>
+                                </dxg:AdvancedColumnLayout.ColumnDefinitions>
+                                <dxg:AdvancedColumnLayout.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </dxg:AdvancedColumnLayout.RowDefinitions>
+                            </dxg:AdvancedColumnLayout>
+                        </dxg:DataGridView.AdvancedColumnLayout>
                         <dxg:DataGridView.CellStyle>
                             <dxg:CellStyle Padding="12" BorderColor="#E8E8E8"
                                FontSize="14" FontColor="#1A1A1A" 
@@ -74,13 +92,12 @@
                                        HorizontalLineThickness="1.4"/>
                         </dxg:DataGridView.ColumnHeaderStyle>
                         <dxg:DataGridView.Columns>
-                            <dxg:TextColumn FieldName="Id" Caption="Id" Width="90" AutoFilterCondition="Contains"/>
-                            <dxg:TextColumn FieldName="NameEmpresa" Caption="Empresa" Width="120"/>
-                            <dxg:TextColumn FieldName="Name" Caption="Cliente" Width="100"/>
-                            <dxg:TextColumn FieldName="Fecha" Caption="Fecha" Width="100"/>
-                        </dxg:DataGridView.Columns>
+                            <dxg:TextColumn FieldName="Id" Caption="Id" Width="90" Column="0" ColumnSpan="3" Row="0"/>
+                            <dxg:TextColumn FieldName="NameEmpresa" Caption="Empresa" Row="1" Column="0" ColumnSpan="5"/>
+                            <dxg:TextColumn FieldName="Name" Caption="Cliente" Row="2" Column="0" ColumnSpan="5"/>
+                            <dxg:TextColumn FieldName="Fecha" Caption="Fecha" Column="3" ColumnSpan="2"/>
+                    </dxg:DataGridView.Columns>
                     </dxg:DataGridView>
-                </StackLayout>
             </dxn:TabViewItem.Content>
         </dxn:TabViewItem>
         <dxn:TabViewItem HeaderText="Grafica" HeaderFontSize="13"
@@ -182,7 +199,6 @@
                                      Grid.Row="1"
                                      SelectionBehavior="Hatch"
                                      SelectionMode="Single">
-
                             <dxc:PieChartView.ChartStyle>
                                 <dxc:PieChartStyle Palette="{Binding Palette}"></dxc:PieChartStyle>
                             </dxc:PieChartView.ChartStyle>
@@ -195,14 +211,12 @@
                             <dxc:PieChartView.Series>
                                 <!--grafica el chart pastel-->
                                 <dxc:DonutSeries>
-
                                     <dxc:PieSeries.Data>
                                         <!--se especifica el modelo del chart pastel-->
                                         <dxc:PieSeriesDataAdapter DataSource="{Binding PieSeriesData}" 
                                                          LabelDataMember="Label" 
                                                          ValueDataMember="Value"/>
                                     </dxc:PieSeries.Data>
-
                                     <dxc:DonutSeries.Label>
                                         <dxc:PieSeriesLabel TextPattern="{}${V}M" Position="Inside"/>
                                     </dxc:DonutSeries.Label>
@@ -220,15 +234,6 @@
                             <RowDefinition Height="auto"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <!--<Label Text="{Binding SelectedItem, Source={x:Reference pieChart},  Converter={StaticResource chartTitleConverter}}"
-                       HorizontalTextAlignment="Center"
-                       HorizontalOptions="Center"
-                       Margin="0,8,0,0"
-                       FontSize="Medium"
-                       FontFamily="Roboto"
-                       TextColor="{DynamicResource TextThemeColor}"
-                       BackgroundColor="{DynamicResource BackgroundThemeColor}"/>-->
-                        <!--titulo del chart de lineas-->
                         <dxc:ChartView x:Name="chart1"
                                   Grid.Row="1"
                                   SelectionMode="None">
@@ -245,9 +250,8 @@
                                 </dxc:Hint>
                             </dxc:ChartView.Hint>
                             <!--muestra la linea vertical con los valores en el chart de lineas-->
-
                             <dxc:ChartView.Series>
-                                <!--al seleccionar el chart pastel controla el chart de lineas, asia color azul-->
+                                <!--al seleccionar el chart pastel controla el chart de lineas, asia -->
                                 <dxc:StackedAreaSeries Visible="{Binding SelectedItem, Source={x:Reference pieChart}, Converter={StaticResource selectionConverter}, ConverterParameter=Asia}" 
                                                   MarkersVisible="true">
                                     <dxc:StackedAreaSeries.Data>
@@ -266,8 +270,7 @@
                                         </dxc:AreaSeriesStyle>
                                     </dxc:StackedAreaSeries.Style>
                                 </dxc:StackedAreaSeries>
-                                <!--al seleccionar el chart pastel controla el chart de lineas, australia color rojo-->
-
+                                <!--al seleccionar el chart pastel controla el chart de lineas, australia -->
                                 <dxc:StackedAreaSeries Visible="{Binding SelectedItem, Source={x:Reference pieChart}, Converter={StaticResource selectionConverter}, ConverterParameter=Australia}"
                                                   MarkersVisible="true">
                                     <dxc:StackedAreaSeries.Data>
@@ -346,6 +349,21 @@
                 </demo:Panel>
             </dxn:TabViewItem.Content>
         </dxn:TabViewItem>
+        <dxn:TabViewItem HeaderText="Calendario" HeaderFontSize="13"
+                         SelectedHeaderBackgroundColor="#6000D9"
+                         SelectedHeaderTextColor="{StaticResource blue600}"
+                         SelectedHeaderIconColor="{StaticResource blue600}">
+            <dxn:TabViewItem.Content>
+                <ScrollView>
+                    <StackLayout>
+                        <dxdf:DataFormView x:Name="dataForm">
+                        </dxdf:DataFormView>
+                    </StackLayout>
+                </ScrollView>
+            </dxn:TabViewItem.Content>
+        </dxn:TabViewItem>
+
     </dxn:TabView>
+  
 </ContentPage>
     

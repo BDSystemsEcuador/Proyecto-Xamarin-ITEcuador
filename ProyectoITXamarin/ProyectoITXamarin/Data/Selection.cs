@@ -56,7 +56,7 @@ namespace DemoCenter.Forms.Data
     }
     public class SalesByYearsData
     {
-        static DateTime StartDate = new DateTime(DateTime.Now.Year, 1, 1).AddYears(-10);
+        static DateTime StartDate = new DateTime(DateTime.Now.Year, 1, 1).AddYears(0);
 
         readonly IList<string> categories = new List<string> { "Asia", "Australia", "Europe", "N. America", "S. America" };
         readonly IList<IList<double>> values = new List<IList<double>> {
@@ -75,7 +75,7 @@ namespace DemoCenter.Forms.Data
             for (int j = 0; j < values.Count; j++)
             {
                 List<DateTimeData> seriesData = new List<DateTimeData>();
-                StartDate = new DateTime(DateTime.Now.Year, 1, 1).AddYears(-10);
+                StartDate = new DateTime(DateTime.Now.Year, 1, 1).AddYears(0);
                 for (int i = 0; i < values[j].Count; i++)
                     seriesData.Add(new DateTimeData(StartDate.AddYears(i), values[j][i]));
                 Data.Add(seriesData);

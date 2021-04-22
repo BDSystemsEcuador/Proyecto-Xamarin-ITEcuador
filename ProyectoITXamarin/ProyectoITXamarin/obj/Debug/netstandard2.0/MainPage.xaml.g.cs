@@ -35,6 +35,9 @@ namespace ProyectoITXamarin {
         private global::DevExpress.XamarinForms.Charts.ChartView chart1;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::DevExpress.XamarinForms.DataForm.DataFormView dataForm;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
             grid = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DevExpress.XamarinForms.DataGrid.DataGridView>(this, "grid");
@@ -43,6 +46,7 @@ namespace ProyectoITXamarin {
             panel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DemoCenter.Forms.Demo.Panel>(this, "panel");
             pieChart = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DevExpress.XamarinForms.Charts.PieChartView>(this, "pieChart");
             chart1 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DevExpress.XamarinForms.Charts.ChartView>(this, "chart1");
+            dataForm = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DevExpress.XamarinForms.DataForm.DataFormView>(this, "dataForm");
         }
     }
 }

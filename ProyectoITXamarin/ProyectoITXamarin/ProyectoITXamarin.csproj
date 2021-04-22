@@ -37,4 +37,8 @@
       <HintPath>..\..\..\..\..\Dropbox\Mi PC (LAPTOP-PGDP0T8B)\Downloads\DevExpress.MobileUI.XamarinForms-20.2.5-20210121\DevExpress.Xamarin\Binaries\DevExpress.XamarinForms.Navigation.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
 </Project>
