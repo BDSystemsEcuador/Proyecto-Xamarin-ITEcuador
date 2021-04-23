@@ -15,7 +15,7 @@
         <local:ViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Resources>
-        <Color x:Key="lightText">#B8B8B8</Color>
+        <Color x:Key="lightText">#A5A5A5</Color>
         <Color x:Key="blue600">#FFFFFF</Color>
         <views:SelectionConverter x:Key="selectionConverter"/>
         <!--este es el selector del chart-->
@@ -26,11 +26,11 @@
 
     </ContentPage.Resources>
     <dxn:TabView HeaderPanelPosition="Bottom"
-             ItemHeaderWidth="*"
+             HeaderPanelIndent="0"
              IsSelectedItemIndicatorVisible="True"
+             SelectedItemIndicatorColor="{StaticResource blue600}"
              ItemHeaderTextColor="{StaticResource lightText}"
-             ItemHeaderIconColor="{StaticResource lightText}"
-             HeaderPanelBackgroundColor="#6000D9"
+             HeaderPanelBackgroundColor="#6000D9"   
              ItemHeaderFontSize="12">
         <dxn:TabViewItem HeaderText="Clientes" HeaderFontSize="13"
                          SelectedHeaderBackgroundColor="#6000D9"
@@ -92,12 +92,12 @@
                                        HorizontalLineThickness="1.4"/>
                         </dxg:DataGridView.ColumnHeaderStyle>
                         <dxg:DataGridView.Columns>
-                            <dxg:TextColumn FieldName="Id" Caption="Id" Width="90" Column="0" ColumnSpan="3" Row="0"/>
+                            <dxg:TextColumn FieldName="Id" Caption="Id" Column="0" ColumnSpan="3" Row="0"/>
+                            <dxg:TextColumn FieldName="Fecha" Caption="Fecha" Column="3" ColumnSpan="2"/>
                             <dxg:TextColumn FieldName="NameEmpresa" Caption="Empresa" Row="1" Column="0" ColumnSpan="5"/>
                             <dxg:TextColumn FieldName="Name" Caption="Cliente" Row="2" Column="0" ColumnSpan="5"/>
-                            <dxg:TextColumn FieldName="Fecha" Caption="Fecha" Column="3" ColumnSpan="2"/>
-                    </dxg:DataGridView.Columns>
-                    </dxg:DataGridView>
+                        </dxg:DataGridView.Columns>
+                </dxg:DataGridView>
             </dxn:TabViewItem.Content>
         </dxn:TabViewItem>
         <dxn:TabViewItem HeaderText="Grafica" HeaderFontSize="13"
@@ -356,7 +356,55 @@
             <dxn:TabViewItem.Content>
                 <ScrollView>
                     <StackLayout>
-                        <dxdf:DataFormView x:Name="dataForm">
+                        <dxdf:DataFormView x:Name="dataForm"
+                                           EditorLabelWidth="40"
+                                           GroupHeaderBackgroundColor="#E7E7E7"
+                                           GroupHeaderTextColor="#4155F0"
+                                           EditorLabelColor="#646464">
+                            <dxdf:DataFormTextItem FieldName="Nombre"
+                                                   LabelText="Nombre y Apellido:"
+                           RowOrder="1" 
+                           ItemOrderInRow="1" 
+                           LabelIcon="editors_name"
+                           GroupName="Perfil"
+                           LabelWidth="77"/>
+                            <dxdf:DataFormTextItem FieldName="Apellido" 
+                           RowOrder="1" 
+                           ItemOrderInRow="2"  
+                           IsLabelVisible="False"
+                           GroupName="Perfil"/>
+                            <dxdf:DataFormDateItem FieldName="Fecha"
+                                                   LabelText="Fecha:"
+                           RowOrder="2" 
+                           DisplayFormat="d" 
+                           LabelIcon="editors_birthdate"
+                           GroupName="Perfil"
+                           LabelWidth="77"/>
+                            <dxdf:DataFormComboBoxItem FieldName="Cargo_IT"
+                            LabelText="Cargo IT:"
+                            RowOrder="3"
+                            GroupName="Perfil" 
+                            LabelWidth="77"/>
+                            <dxdf:DataFormPasswordItem FieldName="Contraseña" 
+                                                       LabelText="Contraseña:"
+                               RowOrder="4" 
+                               LabelIcon="editors_password"
+                               GroupName="Perfil"
+                               LabelWidth="77"/>
+                            <dxdf:DataFormTextItem FieldName="Email" 
+                                                   LabelText="Email:"
+                           RowOrder="5" 
+                           LabelIcon="editors_email"
+                           GroupName="Información de Contacto"
+                           LabelWidth="77"/>
+                            <dxdf:DataFormMaskedItem FieldName="Telefono" 
+                                                     LabelText="Telefono:"
+                             RowOrder="6" 
+                             Mask="(00) 000-0000" 
+                             Keyboard="Telephone" 
+                             LabelIcon="editors_phone"
+                             GroupName="Información de Contacto"
+                             LabelWidth="77"/>
                         </dxdf:DataFormView>
                     </StackLayout>
                 </ScrollView>
