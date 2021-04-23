@@ -37,6 +37,13 @@
                          SelectedHeaderIconColor="{StaticResource blue600}">
             <dxn:TabViewItem.Content>
                 <StackLayout>
+                    <Label Text="Lista de Clientes IT"
+                           HorizontalOptions="Center"
+                           Margin="0,8,0,0"
+                           FontSize="Medium"
+                           FontFamily="Roboto"
+                           TextColor="Black"
+                           BackgroundColor="#FAFAFA"/>
                     <dxg:DataGridView x:Name="grid" ItemsSource="{Binding Clientes}" ShowAutoFilterRow="True">
                         <dxg:DataGridView.CellStyle>
                             <dxg:CellStyle Padding="12" BorderColor="#E8E8E8"
@@ -62,7 +69,15 @@
                          SelectedHeaderTextColor="{StaticResource blue600}"
                          SelectedHeaderIconColor="{StaticResource blue600}">
             <dxn:TabViewItem.Content>
-                <dxg:DataGridView x:Name="grid1">
+                <StackLayout>
+                    <Label Text="Lista de Facturas IT"
+                           HorizontalOptions="Center"
+                           Margin="0,8,0,0"
+                           FontSize="Medium"
+                           FontFamily="Roboto"
+                           TextColor="Black"
+                           BackgroundColor="#FAFAFA"/>
+                    <dxg:DataGridView x:Name="grid1">
                     <dxg:DataGridView.AdvancedColumnLayout>
                         <dxg:AdvancedColumnLayout>
                             <dxg:AdvancedColumnLayout.ColumnDefinitions>
@@ -97,6 +112,7 @@
                         <dxg:TextColumn FieldName="Name" Caption="Cliente" Row="2" Column="0" ColumnSpan="5"/>
                     </dxg:DataGridView.Columns>
                 </dxg:DataGridView>
+                </StackLayout>
             </dxn:TabViewItem.Content>
         </dxn:TabViewItem>
         <dxn:TabViewItem HeaderText="Grafica" HeaderFontSize="13"
@@ -104,10 +120,26 @@
                          SelectedHeaderTextColor="{StaticResource blue600}"
                          SelectedHeaderIconColor="{StaticResource blue600}">
             <dxn:TabViewItem.Content>
-                <dxc:PieChartView x:Name="chart" SelectionBehavior="Hatch">
+                <Grid VerticalOptions="FillAndExpand"
+                      HorizontalOptions="FillAndExpand"
+                      BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Total de Ventas por empresa"
+                           HorizontalTextAlignment="Center"
+                           Margin="0,8,0,0"
+                           FontSize="Medium"
+                           FontFamily="Roboto"
+                           BackgroundColor="White"
+                           TextColor="Black"/>
+                    <dxc:PieChartView x:Name="chart" 
+                                      SelectionBehavior="Hatch"
+                                      Grid.Row="1">
                     <dxc:PieChartView.ChartStyle>
                         <dxc:PieChartStyle Palette="{Binding Palette}" 
-                               BorderColor="#747987"/>
+                                           BorderColor="#747987"/>
                     </dxc:PieChartView.ChartStyle>
                     <dxc:PieChartView.Hint>
                         <dxc:PieHint Enabled="True">
@@ -155,6 +187,7 @@
                         </dxc:Legend>
                     </dxc:PieChartView.Legend>
                 </dxc:PieChartView>
+                </Grid>
             </dxn:TabViewItem.Content>
         </dxn:TabViewItem>
         <dxn:TabViewItem HeaderText="Barras" HeaderFontSize="13"
@@ -162,18 +195,33 @@
                          SelectedHeaderTextColor="{StaticResource blue600}"
                          SelectedHeaderIconColor="{StaticResource blue600}">
             <dxn:TabViewItem.Content>
-                <dxc:ChartView>
-                    <dxc:ChartView.Series>
-                        <dxc:BarSeries PointColorizer="{local:CustomColorizer}">
-                            <dxc:BarSeries.Data>
-                                <dxc:SeriesDataAdapter DataSource="{Binding Ventas}" 
-                                           ArgumentDataMember="NameEmpresa">
-                                    <dxc:ValueDataMember Member="Cantidad" Type="Value" />
-                                </dxc:SeriesDataAdapter>
-                            </dxc:BarSeries.Data>
-                        </dxc:BarSeries>
-                    </dxc:ChartView.Series>
-                </dxc:ChartView>
+                <Grid VerticalOptions="FillAndExpand"
+                      HorizontalOptions="FillAndExpand"
+                      BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Total de Ventas por empresa"
+                           HorizontalTextAlignment="Center"
+                           Margin="0,8,0,0"
+                           FontSize="Medium"
+                           FontFamily="Roboto"
+                           BackgroundColor="White"
+                           TextColor="Black"/>
+                    <dxc:ChartView Grid.Row="1">
+                        <dxc:ChartView.Series>
+                            <dxc:BarSeries PointColorizer="{local:CustomColorizer}">
+                                <dxc:BarSeries.Data>
+                                    <dxc:SeriesDataAdapter DataSource="{Binding Ventas}" 
+                                               ArgumentDataMember="NameEmpresa">
+                                        <dxc:ValueDataMember Member="Cantidad" Type="Value" />
+                                    </dxc:SeriesDataAdapter>
+                                </dxc:BarSeries.Data>
+                            </dxc:BarSeries>
+                        </dxc:ChartView.Series>
+                    </dxc:ChartView>
+                </Grid>
             </dxn:TabViewItem.Content>
         </dxn:TabViewItem>
         <dxn:TabViewItem HeaderText="Select" HeaderFontSize="13"
@@ -183,16 +231,19 @@
             <dxn:TabViewItem.Content>
                 <demo:Panel x:Name="panel">
                     <Grid VerticalOptions="FillAndExpand"
-                  HorizontalOptions="FillAndExpand">
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="White">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="auto"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <Label Text="Este es el componente"
-                       HorizontalTextAlignment="Center"
-                       Margin="0,8,0,0"
-                       FontSize="Medium"
-                       FontFamily="Roboto"/>
+                        <Label Text="Total de Ventas por empresa"
+                               HorizontalTextAlignment="Center"
+                               Margin="0,8,0,0"
+                               FontSize="Medium"
+                               FontFamily="Roboto"
+                               BackgroundColor="White"
+                               TextColor="Black"/>
                         <!--inicio del chart tipo pastel-->
                         <dxc:PieChartView x:Name="pieChart"
                                      Grid.Row="1"
@@ -228,11 +279,19 @@
                         <!--fin del chart tipo pastel-->
                     </Grid>
                     <Grid VerticalOptions="FillAndExpand"
-                  HorizontalOptions="FillAndExpand">
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="White">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="auto"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
+                        <Label Text="Ventas por año"
+                               HorizontalTextAlignment="Center"
+                               Margin="0,8,0,0"
+                               FontSize="Medium"
+                               FontFamily="Roboto"
+                               BackgroundColor="White"
+                               TextColor="Black"/>
                         <dxc:ChartView x:Name="chart1"
                                   Grid.Row="1"
                                   SelectionMode="None">
@@ -348,13 +407,20 @@
                 </demo:Panel>
             </dxn:TabViewItem.Content>
         </dxn:TabViewItem>
-        <dxn:TabViewItem HeaderText="Calendario" HeaderFontSize="13"
+        <dxn:TabViewItem HeaderText="Formulario" HeaderFontSize="13"
                          SelectedHeaderBackgroundColor="#0E7A8A"
                          SelectedHeaderTextColor="{StaticResource blue600}"
                          SelectedHeaderIconColor="{StaticResource blue600}">
             <dxn:TabViewItem.Content>
                 <ScrollView>
-                    <StackLayout>
+                    <StackLayout BackgroundColor="White">
+                        <Label Text="Registro"
+                           HorizontalTextAlignment="Center"
+                           Margin="0,8,0,0"
+                           FontSize="Medium"
+                           FontFamily="Roboto"
+                           BackgroundColor="White"
+                           TextColor="Black"/>
                         <dxdf:DataFormView x:Name="dataForm"
                                            EditorLabelWidth="40"
                                            GroupHeaderBackgroundColor="#E7E7E7"
