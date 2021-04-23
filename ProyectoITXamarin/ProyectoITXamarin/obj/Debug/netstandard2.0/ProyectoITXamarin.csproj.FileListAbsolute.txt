@@ -88,4 +88,5 @@ C:\Users\rober\source\repos\xamarin-con-selection\ProyectoITXamarin\ProyectoITXa
 C:\Users\rober\source\repos\xamarin-con-selection\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.dll
 C:\Users\rober\source\repos\xamarin-con-selection\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ref\ProyectoITXamarin.dll
 C:\Users\rober\source\repos\xamarin-con-selection\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.pdb
+C:\Users\rober\source\repos\xamarin-con-selection\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\Inicio.xaml.g.cs
 C:\Users\rober\source\repos\xamarin-con-selection\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.csprojAssemblyReference.cache
