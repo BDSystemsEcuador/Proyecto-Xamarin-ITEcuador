@@ -7,13 +7,14 @@
             <Image Source="https://i.ibb.co/JFRPLsM/Component-2.png"
                    Aspect="AspectFit"
                    Margin="0,30,0,0"
-                   HeightRequest="500"/>
+                   HeightRequest="500"
+                   VerticalOptions="Center"/>
             <Button Text="Continuar"
                     BackgroundColor="White"
                     CornerRadius="5"
                     BorderWidth="0"
                     Padding="30,10"
-                    VerticalOptions="Center"
+                    VerticalOptions="End"
                     HorizontalOptions="Center"
                     Clicked="OnButtonClicked" />
         </StackLayout>

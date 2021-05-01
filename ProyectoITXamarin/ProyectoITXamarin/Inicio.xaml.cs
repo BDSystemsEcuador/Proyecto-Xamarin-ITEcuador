@@ -18,6 +18,7 @@ namespace ProyectoITXamarin
             request.RequestUri = new Uri("https://api.jsonbin.io/b/606e153bceba857326707915");
             //hhttps://api.jsonbin.io/b/606e153bceba857326707915
             //hhttp://localhost:64777/Service1.svc/getClientesSQL
+            //hhttp://192.168.1.6:64777/Service1.svc/getClientesSQL
             request.Method = HttpMethod.Get;
             request.Headers.Add("Accpet", "application/json");
             var client = new HttpClient();

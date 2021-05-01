@@ -45,20 +45,32 @@
                            BackgroundColor="#FAFAFA"/>
                     <!--Recepcion dde data-->
                     <dxg:DataGridView x:Name="grid" ShowAutoFilterRow="True">
+                        <dxg:DataGridView.AdvancedColumnLayout>
+                            <dxg:AdvancedColumnLayout>
+                                <dxg:AdvancedColumnLayout.ColumnDefinitions>
+                                    <ColumnDefinition Width="7*"/>
+                                    <ColumnDefinition Width="7*"/>
+                                    <ColumnDefinition Width="7*"/>
+                                </dxg:AdvancedColumnLayout.ColumnDefinitions>
+                                <dxg:AdvancedColumnLayout.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </dxg:AdvancedColumnLayout.RowDefinitions>
+                            </dxg:AdvancedColumnLayout>
+                        </dxg:DataGridView.AdvancedColumnLayout>
                         <dxg:DataGridView.CellStyle>
                             <dxg:CellStyle Padding="12" BorderColor="#E8E8E8"
                                            FontSize="14" FontColor="#1A1A1A" 
                                            SelectionColor="#E2F0EE" SelectionFontColor="Black"/>
                         </dxg:DataGridView.CellStyle>
                         <dxg:DataGridView.ColumnHeaderStyle>
-                            <dxg:ColumnHeaderStyle Padding="15" BackgroundColor="#FAFAFA" BorderColor="#E8E8E8" BottomBorderColor="#E8E8E8"
+                            <dxg:ColumnHeaderStyle Padding="10" BackgroundColor="#FAFAFA" BorderColor="#E8E8E8" BottomBorderColor="#E8E8E8"
                                                    FontSize="15" FontColor="#161616" FontAttributes="Bold" 
                                                    HorizontalLineThickness="1.4"/>
                         </dxg:DataGridView.ColumnHeaderStyle>
                         <dxg:DataGridView.Columns>
-                            <dxg:TextColumn FieldName="Name" Caption="Nombre" Width="170" AutoFilterCondition="Contains"/>
-                            <dxg:TextColumn FieldName="Ruc" Caption="Ruc" Width="150"/>
-                            <dxg:TextColumn FieldName="Codigo" Caption="Código" Width="90"/>
+                            <dxg:TextColumn FieldName="Name" Caption="Nombre" Column="0" AutoFilterCondition="Contains"/>
+                            <dxg:TextColumn FieldName="Ruc" Caption="Ruc" Column="1"/>
+                            <dxg:TextColumn FieldName="Codigo" Caption="Código" Column="2"/>
                         </dxg:DataGridView.Columns>
                     </dxg:DataGridView>
                 </StackLayout>

@@ -1,0 +1,16 @@
+layout/Tabbar.axml;layout/tabbar.xml
+layout/Toolbar.axml;layout/toolbar.xml
+values/styles.xml;values/styles.xml
+values/colors.xml;values/colors.xml
+mipmap-anydpi-v26/icon.xml;mipmap-anydpi-v26/icon.xml
+mipmap-anydpi-v26/icon_round.xml;mipmap-anydpi-v26/icon_round.xml
+mipmap-hdpi/Icon.png;mipmap-hdpi/icon.png
+mipmap-hdpi/launcher_foreground.png;mipmap-hdpi/launcher_foreground.png
+mipmap-mdpi/Icon.png;mipmap-mdpi/icon.png
+mipmap-mdpi/launcher_foreground.png;mipmap-mdpi/launcher_foreground.png
+mipmap-xhdpi/Icon.png;mipmap-xhdpi/icon.png
+mipmap-xhdpi/launcher_foreground.png;mipmap-xhdpi/launcher_foreground.png
+mipmap-xxhdpi/Icon.png;mipmap-xxhdpi/icon.png
+mipmap-xxhdpi/launcher_foreground.png;mipmap-xxhdpi/launcher_foreground.png
+mipmap-xxxhdpi/Icon.png;mipmap-xxxhdpi/icon.png
+mipmap-xxxhdpi/launcher_foreground.png;mipmap-xxxhdpi/launcher_foreground.png
