@@ -6,6 +6,7 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using DevExpress.XamarinForms.Charts;
 using DemoCenter.Forms.Data;
+using ProyectoITXamarin.Data;
 
 namespace ProyectoITXamarin
 {
@@ -19,7 +20,6 @@ namespace ProyectoITXamarin
         public Color[] Palette => palette;
         public ViewModel()
         {
-            List<Venta> Ventas = new List<Venta>();
             TraerDatosCharts();
             palette = PaletteLoader.LoadPalette("#25a966", "#F13D45", "#45B6F1", "#F7EC42", "#975ba5", "#f45a4e");
             salesByYears = new SalesByYearsData();
@@ -48,17 +48,6 @@ namespace ProyectoITXamarin
                 var resultado = JsonConvert.DeserializeObject<List<Venta>>(content);
                 this.Ventas = resultado;
             }
-        }
-    }
-    //data de ventas por empresas
-    public class Venta
-    {
-        public string NameEmpresa { get; set; }
-        public int Cantidad { get; set; }
-        public Venta(int cantidad, string nameEmpresa)
-        {
-            this.NameEmpresa = nameEmpresa;
-            this.Cantidad = cantidad;
         }
     }
     public class CustomColorizer : ICustomPointColorizer

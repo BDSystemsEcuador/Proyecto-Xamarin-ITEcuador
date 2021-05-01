@@ -29,7 +29,8 @@ namespace ProyectoITXamarin.DataModel
                 {
                     codigo = value;
                     RaisePropertyChanged("Codigo");
-                } }
+                }
+            }
         }
         public string Name
         {
@@ -59,7 +60,6 @@ namespace ProyectoITXamarin.DataModel
     public class ModelObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-
         protected void RaisePropertyChanged(string name)
         {
             if (PropertyChanged != null)

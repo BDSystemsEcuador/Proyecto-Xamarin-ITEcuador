@@ -6,14 +6,7 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using ProyectoITXamarin.DataModel;
 using ProyectoITXamarin.Data;
-using DevExpress.XamarinForms.Core.Themes;
-using DevExpress.XamarinForms.Charts;
-using ProyectoITXamarin;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DevExpress.XamarinForms.DataForm;
+using DevExpress.XamarinForms.Core.Themes; 
 
 namespace ProyectoITXamarin
 {
@@ -23,6 +16,8 @@ namespace ProyectoITXamarin
         {
             var request = new HttpRequestMessage();
             request.RequestUri = new Uri("https://api.jsonbin.io/b/606e153bceba857326707915");
+            //hhttps://api.jsonbin.io/b/606e153bceba857326707915
+            //hhttp://localhost:64777/Service1.svc/getClientesSQL
             request.Method = HttpMethod.Get;
             request.Headers.Add("Accpet", "application/json");
             var client = new HttpClient();
@@ -64,21 +59,4 @@ namespace ProyectoITXamarin
         }
         public bool ShowAutoFilterRow { get; set; }
     }
-    public class PersonalInfo
-    {
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public DateTime Fecha { get; set; }
-        public virtual Cargos Cargo_IT { get; set; }
-        public string Contraseña { get; set; }
-        public string Email { get; set; }
-        public string Telefono { get; set; }
-
-        public PersonalInfo()
-        {
-            this.Fecha = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-        }
-    }
-
-    public enum Cargos { Administrador, Gerente, Empleado, Conserje }
 }
